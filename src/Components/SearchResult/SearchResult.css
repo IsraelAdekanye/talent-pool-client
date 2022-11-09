@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    background-color: rgba(239, 243, 245, 0.877);
+}
+
+.search-input{
+    width: 50%;
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+    outline: none;
+    border: 1px solid navy;
+    background-color: navy;
+    border-radius: 3px;
+    color: white;
+    font-size: 1rem;
+}
+.search-input::placeholder{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.searchResult{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+    overflow: hidden;
+    gap: 20px;
+    padding: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all 0.3s ease-out;
+}
+
+.about{
+    border: 2px solid navy;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.083);
+    background-color: transparent;
+}
+.about:hover{
+    transition:350ms;
+    transform:scale(1.05);    
+}
+.searchResult img{
+    width: 200px;
+    height: 150px;
+}
+.searchResult p{
+    font-size: 1.1rem;
+    margin-bottom: -0.1rem;
+}
+a{
+    text-decoration: none;
+    color: inherit ;
+}
+.social-link a{
+    font-size: 1.2rem;
+}
+.stack-title{
+    font-size: 1rem;
+}
+
+/* responsiveness */
+@media screen and (max-width: 1200px) {
+    .searchResult{
+        margin-top: 2rem;
+        grid-template-columns:auto auto auto;
+        gap: 30px;
+        padding: 20px;
+    }
+    .search-input{
+        width: 70%;
+    }
+    .about{
+        padding: 7px;
+    }
+    .searchResult img{
+        width: 180px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .searchResult img{
+        width: 190px;
+        height: 160px;
+        gap: 10px;
+        padding: 10px;
+    }
+    .about{
+        padding: 1px;
+    }
+    .stack-title{
+        font-size: 0.8rem;
+    }
+    .searchResult p{
+        font-size: 0.9rem;
+    }
+    /* .searchResult img{
+        width: 150px;
+        height: 100px;
+    } */
+}
+
+@media screen and (max-width: 600px) {
+    .searchResult{
+        margin-top: 2rem;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        gap:10px;
+    }
+    .search-input{
+        width: 80%;
+    }
+    .about{
+        padding: 5px;
+        margin-bottom: 1rem;
+    }
+    .searchResult img{
+        width: 150px;
+        height: 100px;
+    }
+    .social-link a{
+        font-size: 1rem;
+    }
+    .stack-title{
+        font-size: 0.7rem;
+    }
+    .searchResult p{
+        font-size: 0.9rem;
+    }
+}
